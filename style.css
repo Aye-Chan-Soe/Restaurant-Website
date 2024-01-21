@@ -1,6 +1,6 @@
 body {
     font-family: 'Lexend Exa', sans-serif;
-    background-color: #FFFDD0;
+    background-color: #FFFFF0;
 }
 
 .navbar-brand {
@@ -27,6 +27,38 @@ body {
     to {
         transform: rotate(360deg);
     }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navbar Styles in Dark Mode */
+body.dark-mode #navbar {
+    background-color: #121212;
+    border-bottom: 3px solid #555;
+}
+
+body.dark-mode #navbar .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+body.dark-mode #navbar .navbar-nav .nav-link:hover {
+    color: #dc3545;
+}
+
+body.dark-mode .navbar-brand {
+    color: #ffffff;
+}
+
+body.dark-mode #navbar .navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+body.dark-mode #navbar .navbar-toggler {
+    border-color: #ffffff
 }
 
 /* Orange => color: #FF6347; 
