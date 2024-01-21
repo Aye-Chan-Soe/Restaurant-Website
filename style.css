@@ -1,0 +1,33 @@
+body {
+    font-family: 'Lexend Exa', sans-serif;
+    background-color: #FFFDD0;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-family: 'Caveat', cursive;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #dc3545;
+}
+
+/* Image Rotate Animation */
+.rotate {
+    object-fit: cover;
+    transform-origin: center center;
+    animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Orange => color: #FF6347; 
+    Danger => */
