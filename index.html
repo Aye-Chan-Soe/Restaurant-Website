@@ -23,6 +23,8 @@
     />
     <!-- CSS file -->
     <link rel="stylesheet" href="style.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <section id="home">
@@ -55,7 +57,7 @@
                   <a class="nav-link" href="#menu">Menu</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#blog">Blog</a>
+                  <a class="nav-link" href="#review">Review</a>
                 </li>
               </ul>
 
@@ -89,24 +91,27 @@
           <div class="col-md-6">
             <div
               class="rounded-pill bg-body-secondary p-3 mb-3 shadow text-center w-75 text-dark"
+              data-aos="fade-down"
             >
               DINE BEYOND THE ORIDINARY
             </div>
-            <div class="fw-bold display-4 mb-4">
+            <div class="fw-bold display-4 mb-4" data-aos="fade-right">
               <span class="text-success">Flavors</span> that <br />
               speak louder <br />
               than <span class="text-danger">words!</span>
             </div>
-            <p class="content">
+            <p class="content" data-aos="fade-right">
               "Embark on a flavor-packed journey at Foody-Hotpot & Buffet! Dive
               into our premium ingredients and signature broths. Whether you
               love spice, broths, or veggies, find your perfect hotpot
               experience!"
             </p>
+            <div data-aos="fade-right">
             <button
               id="btn1"
               type="button"
               class="btn btn-danger rounded-pill p-3 mt-3 w-50"
+              
             >
               <a href="#menu" style="text-decoration: none" class="text-white"
                 >Order Now</a
@@ -117,9 +122,11 @@
                 href="#booking"
                 style="text-decoration: none"
                 class="text-danger"
+              
                 ><i class="bi bi-play-circle fs-3 m-2"></i>Book A Table</a
               >
             </button>
+          </div>
           </div>
           <div class="col-md-6 position-relative">
             <img
@@ -141,27 +148,31 @@
               <img
                 src="imgs/photo_2024-04-04_10-06-53.jpg"
                 alt="aboutimg"
-                class="img-thumbnail rounded-end-circle"
+                class="img-thumbnail "
+                style="border-top-left-radius: 70px;border-bottom-right-radius:70px
+                "
+                data-aos="fade-right"
               />
             </div>
           </div>
           <div class="col-md-6">
-            <div class="container mt-5">
+            <div class="container mt-5" data-aos="fade-in">
               <h1>
                 About
                 <span class="logoText fs-1"
                   >F<span class="text-danger">oo</span>dy</span
                 ><span class="fst-italic fs-5">-Hotpot & Buffet</span>
               </h1>
-              <p class="content">
+              <div data-aos="fade-left">
+              <p class="content" >
                 "Founded in 2014, Foody-Hotpot & Buffet is the brainchild of Li
                 Chen, a visionary entrepreneur with a passion for bringing
                 people together through exceptional dining experiences. Inspired
                 by the rich culinary traditions of hotpot, we embarked on a
                 journey to redefine the hotpot experience in Sichuan, China."
-              </p>
+              </p></div>
               <a href="learnmore.html"
-                ><button class="btn rounded-pill bg-danger text-white l-btn">
+                ><button class="btn rounded-pill bg-danger text-white l-btn" data-aos="fade-left">
                   Learn more
                 </button></a
               >
@@ -174,7 +185,7 @@
     <!-- Menu -->
 
     <section id="menu">
-      <div class="container-fluid text-center p-4 w-75">
+      <div class="container-fluid text-center p-4 w-75" data-aos="fade-up">
         <div class="container-fluid mb-5" style="margin-top: 120px">
           <h1
             class="w-50 text-center bg-body-secondary m-auto p-3 shadow rounded-pill"
@@ -220,7 +231,7 @@
           </button>
         </div>
 
-        <div class="listProduct"></div>
+        <div class="listProduct" data-aos="fade-up"></div>
       </div>
       <div class="cartTab">
         <div class="d-flex justify-content-around">
@@ -250,8 +261,8 @@
         <div class="row">
           <div class="col-md-6 container"></div>
           <div class="col-md-6 container">
-            <div class="container-fluid w-75 mt-5" id="form">
-              <form>
+            <div class="container-fluid w-75 mt-5" data-aos="fade-left" id="form">
+              <form >
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label"
                     >Email address</label
@@ -297,24 +308,98 @@
       </div>
     </section>
 
-    <!-- Blogs -->
-    <section id="blog">
-      <div class="container">
-        <div class="container">
-          <div class="container-fluid">
-            <h1
-              class="w-50 text-center bg-body-secondary m-auto p-3 shadow rounded-pill"
-            >
-              <span class="text-black">Blog</span>
-            </h1>
+    <!-- Review -->
+    <section id="review" class="p-5">
+      <div class="container-fluid my-5 review">
+        <h1
+          class="w-50 text-center bg-body-secondary m-auto p-3 shadow rounded-pill "
+        >
+          <span class="text-black">Reviews</span>
+        </h1>
+      </div>
+        <div class="row g-4" >
+          <div class="col-md-6 col-lg-3" data-aos="flip-left">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/11.jpg"
+                  class="rounded-circle mb-3"
+                />
+                <h3 class="card-title mb-3">John Doe</h3>
+                <p class="card-text">
+                     "Outstanding food,impeccable service.
+                     Zenith will be my favourite all-time."
+                </p>
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+                <i class="bi bi-star text-warning  mx-1"></i>
+              </div>
+            </div>
           </div>
 
-          <div class="row my-5">
-            <div class="col">
-              <img src="imgs/photo_1_2024-04-04_10-32-32.jpg" alt="imgs" />
+          <div class="col-md-6 col-lg-3" data-aos="flip-left">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/12.jpg"
+                  class="rounded-circle mb-3"
+                />
+                <h3 class="card-title mb-3">Tom</h3>
+                <p class="card-text">
+                  "Great food,excellent service, and a wonderful atmosphere at Zenith.
+                  Highly recommended!"
+                </p>
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+                <i class="bi bi-star text-warning  mx-1"></i>
+              </div>
             </div>
-            <div class="col">h</div>
-            <div class="col">h</div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="flip-left">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/11.jpg"
+                  class="rounded-circle mb-3"
+                />
+                <h3 class="card-title mb-3">Jenny</h3>
+                <p class="card-text">
+                 "A warming welcoming,with a lot of  friendly staff. The food was very good too."
+                </p>
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="flip-right">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/women/10.jpg"
+                  class="rounded-circle mb-3"
+                />
+                <h3 class="card-title mb-3">Sandy</h3>
+                
+                <p class="card-text">
+                 "Zenith,always delicious and where great food and good times go hand in hand."
+                </p>
+                
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+                <i class="bi bi-star-fill text-warning  mx-1"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -331,10 +416,11 @@
           <div class="col-md-4 logo">
             <h1>Zenith</h1>
             <span id="icons">
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-twitter-x"></i>
-              <i class="bi bi-tiktok"></i>
-              <i class="bi bi-instagram"></i>
+              <i class="bi bi-facebook  mx-1"></i>
+                <i class="bi bi-instagram  mx-1"></i>
+                <i class="bi bi-twitter-x  mx-1"></i>
+                <i class="bi bi-tiktok mx-1"></i>
+                <i class="bi bi-whatsapp mx-1"></i>
             </span>
           </div>
           <div class="col-md-4">
@@ -366,5 +452,12 @@
     <!-- Bootstrap 5 js files -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:500
+      });
+    </script>
   </body>
 </html>
