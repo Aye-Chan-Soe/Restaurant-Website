@@ -117,7 +117,7 @@
                 >Order Now</a
               >
             </button>
-            <button type="button" class="btn mt-3 text-danger">
+            <button type="button" class="btn mt-3 text-danger ">
               <a
                 href="#booking"
                 style="text-decoration: none"
@@ -193,7 +193,7 @@
         </div>
 
         <div id="filters" class="m-3">
-          <button
+          <button 
             class="filter-btn btn btn-secondary rounded-pill me-2"
             data-category="all"
           >
@@ -240,8 +240,22 @@
         </div>
 
         <div class="listCart"></div>
-        <div class="btn">
-          <button class="btn btn-warning p-3">Check Out</button>
+        <div class="text-center ">
+          <button class="truck-button">
+            <span class="default">Complete Order</span>
+            <span class="success">
+                Order Placed
+                <svg viewbox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                </svg>
+            </span>
+            <div class="truck">
+                <div class="wheel"></div>
+                <div class="back"></div>
+                <div class="front"></div>
+                <div class="box"></div>
+            </div>
+        </button>
         </div>
       </div>
     </section>
@@ -249,6 +263,12 @@
     <!-- Booking -->
     <section id="booking">
       <div class="book-bg container-fluid pb-5">
+        <!-- <div class="popup bg-body-secondary " id="popup">
+          <img src="imgs/tick.png" alt="tick"/>
+          <h2>Thank You!</h2>
+          <p>Your details have been successfully submitted.</p>
+          <button type="button" class="btn btn-danger mt-4 rounded-pill w-50 fs-4 shadow " onclick="closePopUp()">OK</button>
+        </div> -->
         <div class="container-fluid" style="margin-top: 50px">
           <h1
             class="w-50 text-center bg-body-secondary m-auto p-3 shadow rounded-pill"
@@ -258,17 +278,17 @@
         </div>
         <div class="row">
           <div class="col-md-6 container"></div>
-          <div class="col-md-6 container">
+          <div class="col-md-6 col-sm-1  container">
             <div class="container-fluid w-75 mt-5" data-aos="fade-left" id="form">
               <form >
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
+                  <label for="email" class="form-label"
                     >Email address</label
                   >
                   <input
                     type="email"
                     class="form-control"
-                    id="exampleInputEmail1"
+                    id="email"
                     required
                   />
                 </div>
@@ -280,7 +300,6 @@
                     type="tel"
                     class="form-control"
                     id="phonenumber"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     required
                   />
                 </div>
@@ -305,6 +324,7 @@
         </div>
       </div>
     </section>
+    
 
     <!-- Review -->
     <section id="review" class="p-5">
@@ -405,13 +425,13 @@
 
     <section id="footer">
       <div class="f-bg text-center mt-5">
-        <div class="row">
+        <div class="row ft-row">
           <div class="col-md-4">
             <h1>Address</h1>
             <i class="bi bi-geo-alt-fill"></i>Yay Ni Canal Street Between 65 x
             66 Streets
           </div>
-          <div class="col-md-4 logo">
+          <div class="col logo">
             <h1>Zenith</h1>
             <span id="icons">
               <i class="bi bi-facebook  mx-1"></i>
@@ -421,7 +441,7 @@
                 <i class="bi bi-whatsapp mx-1"></i>
             </span>
           </div>
-          <div class="col-md-4">
+          <div class="col contact-us">
             <h1 class="pe-5">Contact Us</h1>
             <table>
               <tr>
@@ -452,6 +472,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
     <script>
       AOS.init({
         duration:500
