@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <style>
+      /* Styles for the tabs */
+      .tab {
+        cursor: pointer;
+        padding: 10px;
+        background-color: lightgray;
+        border: 1px solid gray;
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .tab.active {
+        background-color: white;
+        border-bottom: 1px solid white;
+      }
+
+      /* Styles for the menu items */
+      .menu-item {
+        display: none;
+      }
+
+      .menu-item.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Tabs for drinks and food -->
+    <div class="tab" onclick="showMenu('drinks')">Drinks</div>
+    <div class="tab" onclick="showMenu('food')">Food</div>
+
+    <!-- Menu items for drinks -->
+    <div id="drinks" class="menu-item">
+      <h2>Drinks</h2>
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Soda</li>
+      </ul>
+    </div>
+
+    <!-- Menu items for food -->
+    <div id="food" class="menu-item">
+      <h2>Food</h2>
+      <ul>
+        <li>Burger</li>
+        <li>Pizza</li>
+        <li>Salad</li>
+      </ul>
+    </div>
+
+    <script>
+      // Function to switch between tabs and show corresponding menu items
+      function showMenu(menu) {
+        var tabs = document.querySelectorAll(".tab");
+        tabs.forEach((tab) => {
+          tab.classList.remove("active");
+        });
+        var menuItems = document.querySelectorAll(".menu-item");
+        menuItems.forEach((item) => {
+          item.classList.remove("active");
+        });
+        document.getElementById(menu).classList.add("active");
+      }
+    </script>
+  </body>
+</html>

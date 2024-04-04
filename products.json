@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "name":" Fried 1",
+        "price": 18,
+        "category" : "fried",
+        "image": "imgs/photo_20_2024-04-03_12-06-16.jpg"
+    },
+    {
+        "id": 2,
+        "name":" Fried 2",
+        "price": 20,
+        "category" : "fried",
+        "image": "imgs/photo_27_2024-04-03_12-06-16.jpg"
+    },
+    {
+        "id": 3,
+        "name":"Fried 3",
+        "price": 30,
+        "category" : "fried",
+        "image": "imgs/photo_38_2024-04-03_12-06-16.jpg"
+    },
+    {
+        "id": 4,
+        "name":"Salad 1",
+        "price": 15,
+        "category" : "salad",
+        "image": "imgs/3(1).PNG"
+    },
+    {
+        "id": 5,
+        "name":"Salad 2",
+        "price": 20,
+        "category" : "salad",
+        "image": "imgs/5(1).PNG"
+    },
+    {
+        "id": 6,
+        "name":"Salad 3",
+        "price": 25,
+        "category" : "salad",
+        "image": "imgs/photo_46_2024-04-03_12-06-16.jpg"
+    },
+    {
+        "id": 7,
+        "name":"Noddle 1",
+        "price": 20,
+        "category" : "noddle",
+        "image": "imgs/photo_18_2024-04-03_12-06-16.jpg"
+    },
+    {
+        "id": 8,
+        "name":"Noddle 2",
+        "price": 40,
+        "category" : "noddle",
+        "image": "imgs/photo_48_2024-04-03_12-06-16.jpg"
+    },
+    {
+        "id": 9,
+        "name":" Noddle 3",
+        "price": 25,
+        "category" : "noddle",
+        "image": "imgs/photo_60_2024-04-03_12-06-16.jpg"
+    },
+    {
+        "id": 10,
+        "name":" Wine 1",
+        "price": 250,
+        "category" : "drink",
+        "image": "imgs/photo_3_2024-04-03_12-06-16.jpg"
+    },
+    {
+        "id": 11,
+        "name":" Wine 2",
+        "price": 150,
+        "category" : "drink",
+        "image": "imgs/photo_4_2024-04-03_12-06-16.jpg"
+    },
+    {
+        "id": 12,
+        "name":" Wine 3",
+        "price": 350,
+        "category" : "drink",
+        "image": "imgs/photo_9_2024-04-03_12-06-16.jpg"
+    }
+
+]

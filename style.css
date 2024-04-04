@@ -3,6 +3,18 @@ body {
     background-color: #FFFFF0;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #FFFFF0;
+}
+
 .navbar-brand,
 .logoText {
     font-size: 30px;
@@ -42,6 +54,10 @@ body.dark-mode {
 }
 
 /* Navbar Styles in Dark Mode */
+body.dark-mode header {
+    background: #121212;
+}
+
 body.dark-mode #navbar {
     background-color: #121212;
     border-bottom: 3px solid #555;
@@ -67,11 +83,248 @@ body.dark-mode #navbar .navbar-toggler {
     border-color: #ffffff
 }
 
+body.dark-mode .listProduct {
+    color: #121212;
+}
+
+/* About Us */
+
+.margin-top {
+    margin-top: 100px;
+}
+
 .aboutImg {
     width: 450px;
     height: 350px;
 
 }
 
+.l-btn {
+    padding: 15px 20px 15px 20px;
+    font-size: 18px;
+}
+
+/* Menu */
+.menu {
+    margin: 5% 25%;
+}
+
+/* Blogs */
+
 /* Orange => color: #FF6347; 
     Danger => */
+
+/* Booking */
+.book-bg {
+    background: url("imgs/photo_3_2024-04-03_12-34-17.jpg");
+    background-size: cover;
+}
+
+.img-size1 {
+    width: 1000px;
+    height: 600px;
+}
+
+#booking {
+    width: 1200px;
+    height: auto;
+    margin: 10% auto;
+    border-radius: 30px;
+}
+
+#form,
+#emailHelp {
+    background: rgb(228, 210, 213);
+    opacity: .9;
+    color: #121212;
+}
+
+#form {
+    padding: 40px;
+    border-radius: 50px;
+}
+
+.sub-btn-p {
+    margin: 5% 45% auto 35%;
+}
+
+.sub-btn {
+    width: 100px;
+    padding: 10px;
+    color: #FFFFF0;
+    background-color: #dc3545;
+}
+
+/* Footer */
+.f-bg {
+    background-color: #dc3545;
+    color: #FFFFF0;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+}
+
+#icons {
+    font-size: 20px;
+}
+
+/* menu */
+
+.listProduct .item img {
+    width: 100%;
+    filter: drop-shadow(0 50px 20px #0009);
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.listProduct {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.listProduct .item {
+    background-color: #EEEEE6;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.listProduct .item h2 {
+    padding: 20px 5px 10px 5px;
+    font-weight: 500;
+    font-size: large;
+}
+
+.listProduct .item .price {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+
+}
+
+.listProduct .item button {
+    background-color: #dc3545;
+    color: #eee;
+    font-size: small;
+    width: 150px;
+    height: 40px;
+    border: none;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+/* cart */
+.cartTab {
+    width: 400px;
+    padding: 100px 3px 5px 10px;
+    background-color: #555;
+    color: #eee;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+
+body.showCart .cartTab {
+    right: 0;
+}
+
+.listCart .item img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.listCart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.listCart .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+
+.listCart .item:nth-child(even) {
+    background-color: #eee1;
+}
+
+.listCart {
+    overflow: auto;
+}
+
+.listCart::-webkit-scrollbar {
+    width: 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .listProduct {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .nav-icon {
+        display: inline;
+    }
+
+    .listProduct {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #menu h1 {
+        font-size: 20px;
+    }
+
+
+
+    .cartTab>.close-btn {
+        display: inline;
+    }
+
+    #booking {
+        background-size: cover;
+        width: 400px;
+    }
+
+    #booking h1 {
+        width: 100px;
+        font-size: 15px;
+    }
+
+
+    #filters {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .texts {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+}
